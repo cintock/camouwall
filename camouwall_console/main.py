@@ -4,7 +4,8 @@ from seed_processing import PasswordValidationResultEnum, process_mnemonic
 
 if __name__ == '__main__':
     debug_mode = 'debug' in argv[1:]
-    print('Seed phrase encryption application Camouwall. Version 1.0')
+    print('********** Seed phrase encryption application Camouwall. Version 1.0 **********')
+    print('Supported seed phrases: BIP39 seed phrases from 12, 15, 18, 21, 24 words')
     extended_mnemonic = input(
         'Input seed or encrypted seed with checksum or encrypted seed without checksum: ')
     password = input('Input password: ')
